@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pusat Transparansi & Inklusivitas | Dear Me Beauty Official</title>
+    
+    <!-- SEO & Metadata -->
+    <meta name="description" content="Komitmen inklusivitas warna kulit Dear Me Beauty. Simak pernyataan resmi, tindakan korektif, dan bukti audit independen kami.">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        :root {
+            --brand-primary: #be123c;
+            --brand-accent: #fb7185;
+            --skin-dark: #4b3228;
+            --skin-medium: #c68642;
+            --skin-light: #f1c27d;
+            --bg-soft: #fdfaf9;
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: var(--bg-soft);
+            color: #1a1a1a;
+            scroll-behavior: smooth;
+        }
+
+        .serif { font-family: 'Playfair Display', serif; }
+
+        /* Custom Glassmorphism */
+        .glass-card {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            box-shadow: 0 10px 30px -5px rgba(190, 18, 60, 0.05);
+        }
+
+        /* Animated Mesh Background */
+        .mesh-bg {
+            background-color: #be123c;
+            background-image: 
+                radial-gradient(at 0% 0%, hsla(343,98%,72%,1) 0, transparent 50%), 
+                radial-gradient(at 50% 0%, hsla(10,100%,88%,1) 0, transparent 50%), 
+                radial-gradient(at 100% 0%, hsla(339,49%,30%,1) 0, transparent 50%), 
+                radial-gradient(at 50% 100%, hsla(339,49%,30%,1) 0, transparent 50%), 
+                radial-gradient(at 0% 100%, hsla(10,100%,88%,1) 0, transparent 50%), 
+                radial-gradient(at 100% 100%, hsla(343,98%,72%,1) 0, transparent 50%);
+        }
+
+        /* Active Navigation Link */
+        .nav-active {
+            color: var(--brand-primary);
+            background: linear-gradient(to right, rgba(190, 18, 60, 0.08), transparent);
+            border-left: 3px solid var(--brand-primary);
+            font-weight: 700;
+        }
+
+        /* Skin Tone Spectrum */
+        .spectrum-line {
+            height: 12px;
+            border-radius: 6px;
+            background: linear-gradient(to right, #f9ebde, #f1c27d, #e0ac69, #c68642, #8d5524, #4b3228);
+            position: relative;
+        }
+
+        /* Hover Transitions */
+        .hover-lift {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .hover-lift:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px -10px rgba(0,0,0,0.1);
+        }
+
+        section { scroll-margin-top: 120px; }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: var(--bg-soft); }
+        ::-webkit-scrollbar-thumb { background: #fda4af; border-radius: 10px; }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Premium Top Bar -->
+    <div class="bg-stone-900 text-white text-[10px] uppercase tracking-[0.4em] py-3 text-center font-bold">
+        Commitment to Beauty Inclusivity & Transparency • Version 2.0
+    </div>
+
+    <!-- Floating Navigation -->
+    <header class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-rose-50">
+        <div class="max-w-7xl mx-auto px-6 h-24 flex items-center justify-between">
+            <div class="flex items-center gap-4">
+                <div class="w-12 h-12 bg-stone-900 rounded-full flex items-center justify-center text-white font-bold text-2xl shadow-xl">D</div>
+                <div class="flex flex-col">
+                    <span class="font-bold text-2xl tracking-tighter serif italic leading-none">Dear Me</span>
+                    <span class="text-rose-600 font-bold text-[10px] uppercase tracking-[0.3em] mt-1">Beauty Official</span>
+                </div>
+            </div>
+            <nav class="hidden lg:flex gap-12 text-[11px] font-black uppercase tracking-[0.2em] text-stone-400">
+                <a href="#" class="hover:text-rose-600 transition-colors">Catalog</a>
+                <a href="#" class="hover:text-rose-600 transition-colors">Inside Dear Me</a>
+                <a href="#" class="text-rose-600 border-b-2 border-rose-600 pb-2">Transparency</a>
+            </nav>
+            <div class="flex items-center gap-6">
+                <button class="w-10 h-10 rounded-full bg-stone-50 flex items-center justify-center text-stone-400 hover:text-rose-600 transition-all"><i class="fa-solid fa-search"></i></button>
+                <button class="bg-stone-900 text-white px-8 py-3 rounded-full text-[11px] font-bold uppercase tracking-widest hover:bg-rose-700 transition-all shadow-lg shadow-rose-100">Contact</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Editorial -->
+    <section class="mesh-bg text-white py-32 px-6 relative overflow-hidden">
+        <div class="absolute inset-0 opacity-20">
+            <svg class="h-full w-full" viewBox="0 0 100 100" preserveAspectRatio="none">
+                <path d="M0 100 Q 50 0 100 100 Z" fill="white"></path>
+            </svg>
+        </div>
+        <div class="max-w-5xl mx-auto text-center relative z-10">
+            <span class="inline-block px-6 py-2 rounded-full bg-white/20 backdrop-blur-lg text-[10px] font-bold uppercase tracking-[0.5em] mb-10 border border-white/30">
+                Pusat Transparansi Resmi
+            </span>
+            <h1 class="text-5xl md:text-8xl font-bold mb-10 leading-[1.1] serif italic">
+                Setiap Spektrum <br/>
+                <span class="font-light not-italic opacity-90 text-rose-100">Adalah Kecantikan</span>
+            </h1>
+            <p class="text-rose-50 text-xl font-light max-w-2xl mx-auto leading-relaxed opacity-90">
+                Menghargai keberagaman kulit Indonesia bukan sekadar janji, tapi langkah nyata yang kami dokumentasikan secara terbuka untuk Anda.
+            </p>
+        </div>
+    </section>
+
+    <main class="max-w-7xl mx-auto px-6 py-24">
+        <div class="flex flex-col lg:flex-row gap-20">
+            
+            <!-- Sidebar Nav -->
+            <aside class="lg:w-1/4">
+                <div class="glass-card rounded-[2.5rem] p-10 sticky top-36 border border-rose-100 shadow-2xl">
+                    <h3 class="text-[11px] font-black text-stone-300 uppercase tracking-[0.4em] mb-10">Laporan Transparansi</h3>
+                    <ul class="space-y-3" id="sidebar-menu">
+                        <li>
+                            <a href="#pernyataan" class="nav-link flex items-center gap-4 p-5 rounded-3xl transition-all hover:bg-white text-sm font-semibold text-stone-400">
+                                <span class="w-10 h-10 rounded-full bg-white shadow-sm flex items-center justify-center text-xs"><i class="fa-solid fa-quote-left"></i></span>
+                                Pernyataan Resmi
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#tindakan" class="nav-link flex items-center gap-4 p-5 rounded-3xl transition-all hover:bg-white text-sm font-semibold text-stone-400">
+                                <span class="w-10 h-10 rounded-full bg-white shadow-sm flex items-center justify-center text-xs"><i class="fa-solid fa-bolt-lightning"></i></span>
+                                Tindakan Korektif
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#audit" class="nav-link flex items-center gap-4 p-5 rounded-3xl transition-all hover:bg-white text-sm font-semibold text-stone-400">
+                                <span class="w-10 h-10 rounded-full bg-white shadow-sm flex items-center justify-center text-xs"><i class="fa-solid fa-microscope"></i></span>
+                                Bukti Inklusivitas
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#sop" class="nav-link flex items-center gap-4 p-5 rounded-3xl transition-all hover:bg-white text-sm font-semibold text-stone-400">
+                                <span class="w-10 h-10 rounded-full bg-white shadow-sm flex items-center justify-center text-xs"><i class="fa-solid fa-file-shield"></i></span>
+                                Pembaruan SOP
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </aside>
+
+            <!-- Content Area -->
+            <div class="lg:w-3/4 space-y-32">
+                
+                <!-- Section: Pernyataan -->
+                <section id="pernyataan" class="relative">
+                    <div class="absolute -left-10 top-0 w-2 h-20 bg-rose-600 rounded-full hidden lg:block"></div>
+                    <h2 class="text-4xl md:text-5xl font-bold mb-12 serif italic text-stone-800">Klarifikasi & Pernyataan Resmi</h2>
+                    <div class="bg-white rounded-[3rem] p-12 md:p-16 shadow-sm border border-rose-50 relative overflow-hidden">
+                        <div class="absolute -top-10 -right-10 opacity-5">
+                            <i class="fa-solid fa-quote-right text-[20rem]"></i>
+                        </div>
+                        <div class="prose prose-xl text-stone-600 font-light leading-relaxed space-y-8 relative z-10">
+                            <p class="text-3xl text-stone-900 font-medium italic serif leading-snug">
+                                "Inklusivitas adalah misi kami sejak hari pertama, namun kami menyadari ada jarak antara niat dan pelaksanaan."
+                            </p>
+                            <p>
+                                Dear Me Beauty memohon maaf atas ketidaknyamanan terkait isu rentang warna kulit dan etika komunikasi admin kami. Kami menyadari bahwa kepercayaan Anda adalah aset paling berharga.
+                            </p>
+                            <p>
+                                Laporan ini disusun bukan sekadar sebagai jawaban atas krisis, melainkan sebagai peta jalan bagi kami untuk bertransformasi menjadi brand yang benar-benar mewakili setiap spektrum kecantikan wanita Indonesia.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Section: Tindakan -->
+                <section id="tindakan">
+                    <h2 class="text-4xl md:text-5xl font-bold mb-12 serif italic text-stone-800">Tindakan Korektif Strategis</h2>
+                    <div class="grid md:grid-cols-2 gap-10">
+                        <div class="group bg-white p-12 rounded-[3rem] border border-rose-50 hover-lift relative overflow-hidden">
+                            <div class="w-16 h-16 bg-rose-50 text-rose-600 rounded-2xl flex items-center justify-center mb-10 text-3xl group-hover:bg-rose-600 group-hover:text-white transition-all duration-500">
+                                <i class="fa-solid fa-user-group"></i>
+                            </div>
+                            <h4 class="text-2xl font-bold mb-5 serif italic">Reformasi Internal</h4>
+                            <p class="text-stone-500 font-light leading-relaxed">Implementasi pelatihan sensitivitas keberagaman wajib bagi seluruh staf media sosial dan pemasaran guna memastikan komunikasi yang menghargai setiap pelanggan.</p>
+                        </div>
+                        <div class="group bg-white p-12 rounded-[3rem] border border-rose-50 hover-lift relative overflow-hidden">
+                            <div class="w-16 h-16 bg-amber-50 text-amber-600 rounded-2xl flex items-center justify-center mb-10 text-3xl group-hover:bg-amber-600 group-hover:text-white transition-all duration-500">
+                                <i class="fa-solid fa-flask-vial"></i>
+                            </div>
+                            <h4 class="text-2xl font-bold mb-5 serif italic">R&D Inklusif</h4>
+                            <p class="text-stone-500 font-light leading-relaxed">Restrukturisasi tim riset laboratorium dengan keterlibatan panelis kulit gelap (Deep shades) minimal 40% dalam setiap tahap pengembangan produk complexion.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Section: Audit -->
+                <section id="audit">
+                    <h2 class="text-4xl md:text-5xl font-bold mb-12 serif italic text-stone-800">Bukti Audit Inklusivitas</h2>
+                    <div class="bg-stone-900 text-white rounded-[4rem] p-16 shadow-2xl relative overflow-hidden">
+                        <div class="absolute top-0 right-0 p-20 opacity-10">
+                            <i class="fa-solid fa-award text-[15rem]"></i>
+                        </div>
+                        <div class="relative z-10">
+                            <div class="flex flex-col md:flex-row justify-between items-start gap-8 mb-16">
+                                <div>
+                                    <h4 class="text-4xl font-bold mb-2 serif italic">Shade Range Report 2026</h4>
+                                    <p class="text-stone-400 text-xs uppercase tracking-[0.3em]">Verified by Independent Diversity Auditor</p>
+                                </div>
+                                <div class="px-8 py-3 bg-white/10 backdrop-blur-md rounded-full border border-white/20 text-[10px] font-bold uppercase tracking-widest">
+                                    High-E-E-A-T Score Verified
+                                </div>
+                            </div>
+                            
+                            <div class="space-y-12">
+                                <div class="space-y-4">
+                                    <div class="flex justify-between text-xs font-bold uppercase tracking-widest text-rose-300">
+                                        <span>Inklusivitas Spektrum Kulit Indonesia</span>
+                                        <span>88% Verified</span>
+                                    </div>
+                                    <div class="h-3 bg-white/10 rounded-full overflow-hidden shadow-inner">
+                                        <div class="h-full bg-rose-500 w-[88%] rounded-full shadow-[0_0_20px_rgba(244,63,94,0.6)]"></div>
+                                    </div>
+                                </div>
+                                <div class="pt-6">
+                                    <p class="text-[10px] text-stone-400 mb-6 uppercase tracking-[0.4em] font-black">Visual Representation Spectrum</p>
+                                    <div class="spectrum-line shadow-xl"></div>
+                                </div>
+                            </div>
+
+                            <div class="mt-20 flex flex-wrap gap-6">
+                                <button class="px-10 py-5 bg-white text-stone-900 rounded-full text-[11px] font-black uppercase tracking-widest hover:bg-rose-50 transition-all flex items-center gap-4 shadow-xl">
+                                    <i class="fa-solid fa-file-pdf text-lg"></i> Unduh Laporan Audit Lengkap
+                                </button>
+                                <button class="px-10 py-5 bg-white/10 border border-white/20 rounded-full text-[11px] font-black uppercase tracking-widest hover:bg-white/20 transition-all">
+                                    Sertifikasi Laboratorium QA
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Section: SOP -->
+                <section id="sop">
+                    <h2 class="text-4xl md:text-5xl font-bold mb-12 serif italic text-stone-800">Pembaruan SOP Operasional</h2>
+                    <div class="bg-white rounded-[3.5rem] border border-rose-50 shadow-sm overflow-hidden">
+                        <div class="p-16 border-b border-rose-50">
+                            <h4 class="text-3xl font-bold mb-8 serif italic">Protokol Komunikasi Baru</h4>
+                            <p class="text-stone-500 text-lg leading-relaxed font-light">Setiap konten kreatif dan respon media sosial kini melewati sistem kurasi tiga tahap oleh tim <em>Diversity, Equity & Inclusion</em> untuk memastikan tidak ada lagi diskriminasi dalam bentuk apapun.</p>
+                        </div>
+                        <div class="bg-rose-50/20 p-16 text-center">
+                            <div class="max-w-xl mx-auto">
+                                <h5 class="text-2xl font-bold text-stone-800 mb-6 serif italic">Punya Masukan Terkait Produk Kami?</h5>
+                                <p class="text-stone-500 mb-12 font-light">Kami membuka jalur komunikasi langsung dengan tim Quality Assurance dan Consumer Care untuk setiap saran terkait inklusivitas produk.</p>
+                                <a href="#" class="inline-flex items-center gap-5 bg-stone-900 text-white px-14 py-6 rounded-full font-bold text-xs uppercase tracking-widest shadow-2xl hover:bg-rose-700 transition-all hover:-translate-y-2">
+                                    <i class="fa-brands fa-whatsapp text-2xl"></i> Chat Priority Support
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-16 flex items-center justify-between p-10 glass-card rounded-[3rem] border border-rose-100">
+                        <div class="flex items-center gap-6">
+                            <div class="w-16 h-16 rounded-3xl bg-gradient-to-br from-stone-800 to-black flex items-center justify-center text-white font-black text-sm shadow-xl">QA</div>
+                            <div>
+                                <p class="text-lg font-bold text-stone-800">Tim Kepatuhan Inklusivitas</p>
+                                <p class="text-[10px] text-stone-400 uppercase tracking-[0.3em] font-bold">Terverifikasi: 15 Mei 2026 • Dear Me Beauty</p>
+                            </div>
+                        </div>
+                        <div class="hidden md:flex items-center gap-4 text-rose-600 font-black text-xs uppercase tracking-[0.3em]">
+                            <span class="w-3 h-3 bg-rose-600 rounded-full animate-ping"></span> Live Updates
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- Premium Footer -->
+    <footer class="bg-white border-t border-rose-50 pt-32 pb-20">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-start gap-20 mb-24">
+                <div class="max-w-md">
+                    <div class="flex items-center gap-4 mb-10">
+                        <div class="w-10 h-10 bg-rose-600 rounded-full flex items-center justify-center text-white font-bold">D</div>
+                        <span class="font-bold text-2xl tracking-tighter serif italic">Dear Me <span class="text-rose-600 not-italic font-light">Beauty</span></span>
+                    </div>
+                    <p class="text-stone-400 font-light leading-relaxed">
+                        Kami adalah perayaan atas warna-warni wanita Indonesia. Teruslah bersuara, karena setiap suara Anda membantu kami menjadi lebih baik dalam mendefinisikan standar kecantikan lokal yang sesungguhnya.
+                    </p>
+                </div>
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-20">
+                    <div class="space-y-8">
+                        <h6 class="text-[11px] font-black uppercase tracking-[0.4em] text-stone-800">Support</h6>
+                        <ul class="text-stone-400 text-sm space-y-5 font-light">
+                            <li><a href="#" class="hover:text-rose-600 transition-colors">Customer Care</a></li>
+                            <li><a href="#" class="hover:text-rose-600 transition-colors">Transparency Center</a></li>
+                            <li><a href="#" class="hover:text-rose-600 transition-colors">Inclusivity Policy</a></li>
+                        </ul>
+                    </div>
+                    <div class="space-y-8">
+                        <h6 class="text-[11px] font-black uppercase tracking-[0.4em] text-stone-800">Community</h6>
+                        <ul class="text-stone-400 text-sm space-y-5 font-light">
+                            <li><a href="#" class="hover:text-rose-600 transition-colors">Affiliate</a></li>
+                            <li><a href="#" class="hover:text-rose-600 transition-colors">Career</a></li>
+                            <li><a href="#" class="hover:text-rose-600 transition-colors">Press Release</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="pt-12 border-t border-rose-50 flex flex-col md:flex-row justify-between items-center gap-8">
+                <p class="text-stone-300 text-[10px] font-bold uppercase tracking-[0.5em]">© 2026 Dear Me Beauty Indonesia • Inclusivity First</p>
+                <div class="flex gap-8 text-stone-300">
+                    <a href="#" class="hover:text-rose-600 transition-all"><i class="fa-brands fa-instagram text-xl"></i></a>
+                    <a href="#" class="hover:text-rose-600 transition-all"><i class="fa-brands fa-tiktok text-xl"></i></a>
+                    <a href="#" class="hover:text-rose-600 transition-all"><i class="fa-brands fa-youtube text-xl"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Scroll Spy Functionality
+        const sections = document.querySelectorAll('section[id]');
+        const navLinks = document.querySelectorAll('.nav-link');
+
+        window.addEventListener('scroll', () => {
+            let current = "";
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                if (pageYOffset >= (sectionTop - 250)) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('nav-active');
+                if (link.getAttribute('href').substring(1) === current) {
+                    link.classList.add('nav-active');
+                }
+            });
+        });
+
+        // Smooth Scroll for Sidebar
+        navLinks.forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                const targetId = link.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                const offset = 120;
+                const elementPosition = targetElement.getBoundingClientRect().top;
+                const offsetPosition = elementPosition + window.pageYOffset - offset;
+
+                window.scrollTo({
+                    top: offsetPosition,
+                    behavior: "smooth"
+                });
+            });
+        });
+
+        // Initial Active State
+        window.addEventListener('DOMContentLoaded', () => {
+            if(navLinks[0]) navLinks[0].classList.add('nav-active');
+        });
+    </script>
+</body>
+</html>
